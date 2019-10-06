@@ -1,0 +1,166 @@
+    /* general styling */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    footer a{
+        color: white;
+    }
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Background image scrolling */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* hero image */
+    .title {
+        padding: 2%;
+    }
+
+    .bgimg-1 {
+        background-image: url(../images/radar_system.jpg);
+    }
+
+    /* Services image */
+    .bgimg-2 {
+        background-image: url(../images/TADRS.jpg);
+    }
+
+    /* Contact image */
+    .bgimg-3 {
+        background-image: url(../images/AWAC.jpg);
+    }
+
+    /* w3 - format */
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* navbar styling */
+
+    #Navbar {
+        background: #40B0A6;
+        color: white;
+    }
+
+    /* testimonials */
+
+    #testimonials {
+        text-align: center;
+        color: white;
+        background: #40B0A6
+    }
+
+
+    .testimonial-image {
+        width: 20%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+
+    .carousel-item {
+        padding: 7% 25%;
+    }
+
+    /* about section */
+
+    .profile {
+        margin-bottom: 30px;
+    }
+
+    .list1,
+    .list2 {
+        list-style: none;
+    }
+
+    /* partners styling */
+    #partners {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #partners img {
+        width: 15%;
+        margin: 20px 20px 50px;
+    }
+
+    /* RWD breakpoints */
+
+    /* handheld devices */
+    @media only screen and (max-width: 500px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 60%;
+            width: 100%
+        }
+
+        #partners img {
+            width: 25%;
+        }
+
+        .title {
+            white-space: wrap;
+        }
+
+        .testimonial-text {
+            font-size: 10px;
+        }
+
+    }
+
+    /* tablets */
+    @media only screen and (min-width: 500px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 80%;
+            width: 100%
+        }
+
+        .title {
+            white-space: nowrap;
+        }
+    }
+
+    /* desktop */
+    @media only screen and (min-width: 900px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            min-height: 100%;
+        }
+
+        .testimonial-text {
+            font-size: 20px;
+        }
+    }
