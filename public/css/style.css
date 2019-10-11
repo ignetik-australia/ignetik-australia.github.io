@@ -192,7 +192,10 @@
             min-height: 60%;
             width: 100%
         }
-
+        /* navbar */
+        .navbar {
+            padding: 1% 0;
+        }
         /* services */
         #services-container .card-img{
             height: 150px;
