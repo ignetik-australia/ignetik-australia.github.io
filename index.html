@@ -13,7 +13,7 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/8b430d3d5a.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="public/css/style.css" />
     <!-- favicon -->
@@ -61,8 +61,8 @@
     <!-- hero image -->
 
     <!-- Container (About Section) -->
-    <div class="w3-content w3-container p-4 mt-2" id="about">
-        <h2 class="w3-center">ABOUT</h2>
+    <div class="w3-content w3-container p-4" id="about">
+        <h2 class="w3-center my-4">About</h2>
         <p class='mb-2'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem deleniti assumenda. Nostrum aut, dolorum
             expedita incidunt ad autem. Rerum modi consequuntur aperiam incidunt, iure ratione? Sint laudantium
@@ -77,8 +77,10 @@
     </div>
     <!-- about section -->
     <!-- profile -->
+    <span class="hr-line"></span>
+
     <div class='container p-4 mb-4'>
-        <h2 class="w3-center mb-4">Rainer Ignetik</h2>
+        <h2 class="w3-center my-4">Employment</h2>
         <div class="row">
             <div class="col-12 col-lg-6 list1">
                 <li>Systems Engineer Gallipoli Barracks</li>
@@ -99,19 +101,19 @@
     <!-- profile -->
     <!-- technical skills -->
     <div class="container" style="padding-bottom: 50px;">
-        <p class="w3-wide mt-3">MBSE with CORE</p>
+        <h5 class="skills mt-3">MBSE with CORE</h5>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-teal w3-center w3-opacity-min" style="width:90%">
                 90%
             </div>
         </div>
-        <p class="w3-wide mt-3">Systems Engineering</p>
+        <h5 class="skills mt-3">Systems Engineering</h5>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-teal w3-center w3-opacity-min" style="width:85%">
                 80%
             </div>
         </div>
-        <p class="w3-wide mt-3">Project Management</p>
+        <h5 class="skills mt-3">Project Management</h5>
         <div class="w3-light-grey">
             <div class="w3-container w3-padding-small w3-teal w3-center w3-opacity-min" style="width:85%">
                 80%
@@ -179,29 +181,50 @@
 
     <!-- services container -->
     <div class="w3-content w3-container w3-padding-64 w3-margin-bottom">
-        <div class='w3-card w3-padding my-3'>
-            <h2>Financial services</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non amet autem iure porro corrupti
-                provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia blanditiis eius saepe
-                optio perferendis.
-            </p>
+        <div class="card mb-3 p-4">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-6 col-lg-4">
+                    <img src="public/images/presentation.svg" class="card-img">
+                </div>
+                <div class="col-md-8 col-6 col-lg-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Services</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non amet autem iure porro corrupti
+                                provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia blanditiis eius saepe
+                                optio perferendis.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='w3-card w3-padding my-3'>
-            <h2>Engineering Consulting</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem rerum ea, reprehenderit deleniti
-                amet repellendus eaque provident, dolor fuga ex ipsa culpa officia! Velit asperiores sequi iure dicta
-                laborum? Numquam!
-            </p>
+        <div class="card mb-3 p-4">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-6 col-lg-4">
+                    <img src="public/images/consultation.svg" class="card-img">
+                </div>
+                <div class="col-md-8 col-6 col-lg-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Engineering Consulting</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non amet autem iure porro corrupti
+                                provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia blanditiis eius saepe
+                                optio perferendis.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='w3-card w3-padding my-3'>
-            <h2>Analysis and modeling</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores doloremque quisquam earum quas? Ea
-                reprehenderit illum iure veniam, praesentium aut dolorum harum atque pariatur neque inventore quasi,
-                voluptate odit ipsam.
-            </p>
+        <div class="card mb-3 p-4">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-6 col-lg-4">
+                    <img src="public/images/report.svg" class="card-img">
+                </div>
+                <div class="col-md-8 col-6 col-lg-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Analysis</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta non amet autem iure porro corrupti
+                                provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia blanditiis eius saepe
+                                optio perferendis.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- services container-->
@@ -218,11 +241,11 @@
     <!-- Contact container -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
 
-        <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
+        <div class="w3-row w3-section">
+            <div class="w3-col m6 w3-container">
                 <img src="public/images/canberra_img.jpg" class="w3-image w3-round" style="width:100%">
             </div>
-            <div class="w3-col m8 w3-panel">
+            <div class="w3-col m6 w3-panel">
                 <div class="w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Canberra,
                     Australia<br>
