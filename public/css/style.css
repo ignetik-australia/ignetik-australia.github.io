@@ -141,6 +141,7 @@
     }
     #history .card-header .btn{
         color: #777;
+        text-decoration: none;
     }
 
     #history .card-header :hover {
