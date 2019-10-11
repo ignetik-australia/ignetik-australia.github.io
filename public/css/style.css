@@ -1,5 +1,7 @@
     /* general styling */
+
     .row:before, .row:after {display: none !important;}
+
     html {
         scroll-behavior: smooth;
     }
@@ -131,9 +133,9 @@
     }
 
     /* employment history */
-    #history{
+    #history {
         margin: 2% auto;
-        max-width: 90% ;
+        max-width: 100% ;
     }
     #history .card-header .btn{
         color: #777;
@@ -148,6 +150,10 @@
         max-height: 100%;
     }
 
+    /* specialities */
+    #specialities-container{
+        
+    }
     /* services */
     #services-container {
         margin : 5% auto;
