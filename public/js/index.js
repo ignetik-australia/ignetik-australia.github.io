@@ -10,6 +10,13 @@ $(document).ready(function () {
         $(this).css("opacity", 1)
     });
 
+    // hide menu bar after click 
+    $(".nav-item a").click(function () {
+        $('.navbar-toggler').click();
+        $('.hamburger').click();
+    });
+
+    // hamburger animation
     $(".hamburger").click(function (e) {
         e.preventDefault();
         if (clicks % 2 == 0) {
@@ -37,4 +44,8 @@ $(document).ready(function () {
 
     });
 
+    // hide menu bar after click 
+    $(".nav-item a").click(function () {
+        $('.navbar-toggler').click();
+    });
 });
