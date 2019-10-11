@@ -2,6 +2,9 @@
 
     .row:before, .row:after {display: none !important;}
 
+    button:focus {
+        outline: none;
+    }
     html {
         scroll-behavior: smooth;
     }
@@ -238,6 +241,17 @@
             background-attachment: fixed;
             min-height: 100%;
         }
+
+        /* navbar */
+        #navbarNav{
+            padding:1% 0;
+        }
+
+        /* increase font a bit */
+        .nav-item{
+            font-size: 1.5rem;
+        }
+
         /* testimonials */
         .testimonial-text {
             font-size: 20px;
