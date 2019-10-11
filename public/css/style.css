@@ -129,19 +129,39 @@
         letter-spacing: 5px;
     }
 
-    /* services */
-    .card {
-        max-height: 300px;
-        border-style: none;
+    /* employment history */
+    #history{
+        margin: 2% auto;
+        max-width: 80% ;
     }
-    .card-img {
-        height: 60%;
-        margin:7% 0;
+    #history .card-header .btn{
+        color: #777;
     }
 
-    .card-title {
-        font-size : 1.5rem;
+    #history .card-header :hover {
+        text-decoration: none;
+        opacity:0.9;
     }
+
+    #history .card{
+        max-height: 100%;
+    }
+
+    /* services */
+    #services-container {
+        margin : 5% auto;
+        width:80%;
+    }
+
+    #services-container .card{
+        border: none;
+    }
+
+    #services-container .card-img{
+        height : 200px;
+        margin:5% 0;
+    }
+
     /* partners styling */
     #partners {
         text-align: center;
@@ -159,6 +179,7 @@
     /* handheld devices */
     @media only screen and (max-width: 500px) {
 
+        /* bg images */
         .bgimg-1,
         .bgimg-2,
         .bgimg-3 {
@@ -167,14 +188,19 @@
             width: 100%
         }
 
+        /* services */
+        #services-container .card-img{
+            height: 150px;
+        }
+        /* partners */
         #partners img {
             width: 25%;
         }
-
+        /* title */
         .title {
             white-space: wrap;
         }
-
+        /* testimonials */
         .testimonial-text {
             font-size: 10px;
         }
@@ -182,7 +208,7 @@
     }
     /* tablets */
     @media only screen and (min-width: 500px) {
-
+        /* bg images */
         .bgimg-1,
         .bgimg-2,
         .bgimg-3 {
@@ -190,24 +216,24 @@
             min-height: 80%;
             width: 100%
         }
-
+        /* title */
         .title {
             white-space: nowrap;
         }
     }
 
-
     /* desktop */
     @media only screen and (min-width: 900px) {
-
+        /* bg images */
         .bgimg-1,
         .bgimg-2,
         .bgimg-3 {
             background-attachment: fixed;
             min-height: 100%;
         }
-
+        /* testimonials */
         .testimonial-text {
             font-size: 20px;
         }
+
     }
