@@ -222,7 +222,7 @@
         .bgimg-2,
         .bgimg-3 {
             background-attachment: scroll;
-            min-height: 80%;
+            min-height: 100%;
             width: 100%
         }
         /* title */
