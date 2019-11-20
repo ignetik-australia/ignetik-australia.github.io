@@ -42,4 +42,8 @@ $(document).ready(function () {
     $(".nav-item a").click(function () {
         $('.navbar-toggler').click();
     });
+
+    // set the year 
+    let year = new Date().getFullYear();
+    $("#copyright span").text(String(year));
 });
