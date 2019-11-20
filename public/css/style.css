@@ -1,21 +1,16 @@
     /* general styling */
 
-    .row:before, .row:after {display: none !important;}
+    .row:before,
+    .row:after {
+        display: none !important;
+    }
 
     button:focus {
         outline: none;
     }
+
     html {
         scroll-behavior: smooth;
-    }
-    
-    .hr-line{ 
-        display:block;
-        border:none;
-        color:white;
-        height:1px;
-        background:black;
-        background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
     }
 
     h1,
@@ -24,7 +19,7 @@
     h4,
     h5,
     h6 {
-        font-family: 'Lato', sans-serif;
+        font: 300 2.1rem/1.2 "Oswald", sans-serif;
     }
 
     footer a {
@@ -33,10 +28,19 @@
 
     body,
     html {
-        font-family: 'Crimson Text',serif;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
         height: 100%;
         color: #777;
         line-height: 1.8;
+    }
+
+    .title-hr {
+        margin-bottom: 2rem;
+        width: 100%;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     }
 
     /* Background image scrolling */
@@ -71,7 +75,7 @@
     /* w3 - format */
     .w3-wide {
         letter-spacing: 10px;
-        font-family: 'Lato',sans-serif;
+        font: 300 2.1rem/1.2 "Oswald", sans-serif;
     }
 
     .w3-hover-opacity {
@@ -82,7 +86,7 @@
 
     #Navbar {
         background: #40B0A6;
-        font-size: 1.5em;
+        font: 300 2.1rem/1.2 "Oswald", sans-serif;
     }
 
     #navbar-container {
@@ -96,18 +100,21 @@
         text-decoration: none;
     }
 
-    .nav-item{
-        font-family: 'Lato',serif;
+    .nav-item {
+        font-family: 'Lato', serif;
         font-size: 1rem;
     }
-    /* testimonials */
 
+    /* testimonials */
     #testimonials {
         text-align: center;
         color: white;
         background: #40B0A6
     }
 
+    .testimonial-text {
+        text-align: justify;
+    }
 
     .testimonial-image {
         width: 20%;
@@ -121,6 +128,22 @@
 
     /* about section */
 
+    #about {
+        padding: 7%;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    #about p {
+        text-align: justify;
+    }
+
     .profile {
         margin-bottom: 30px;
     }
@@ -130,46 +153,36 @@
         list-style: none;
     }
 
-    .skills{
+    .skills {
         letter-spacing: 5px;
-    }
-
-    /* employment history */
-    #history {
-        margin: 2% auto;
-        max-width: 100% ;
-    }
-    #history .card-header .btn{
-        color: #777;
-        text-decoration: none;
-    }
-
-    #history .card-header :hover {
-        text-decoration: none;
-        opacity:0.9;
-    }
-
-    #history .card{
-        max-height: 100%;
     }
 
     /* services */
     #services-container {
-        margin : 5% auto;
-        width:100%;
+        margin: 5% auto;
+        width: 100%;
     }
 
-    #services-container .card{
+    #services-container .card {
         border: none;
     }
 
-    #services-container .card-img{
-        height : 200px;
-        margin:5% 0;
+    #services-container .card-text {
+        text-align: justify;
+    }
+
+    #services-container .card-title {
+        margin-bottom: 2rem;
+    }
+
+    #services-container .card-img {
+        height: 200px;
+        margin: 5% 0;
     }
 
     /* partners styling */
     #partners {
+        padding: 5%;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -193,30 +206,45 @@
             min-height: 60%;
             width: 100%
         }
+
         /* navbar */
         .navbar {
             padding: 1% 0;
         }
+
+        .nav-item{
+            margin: 0.7rem 0;
+        }
+
+        .navbar-nav {
+            padding: 5%;
+        }
+
         /* services */
-        #services-container .card-img{
+        #services-container .card-img {
             height: 150px;
         }
+
         /* partners */
         #partners img {
             width: 25%;
         }
+
         /* title */
         .title {
             white-space: wrap;
         }
+
         /* testimonials */
         .testimonial-text {
             font-size: 10px;
         }
 
     }
+
     /* tablets */
     @media only screen and (min-width: 500px) {
+
         /* bg images */
         .bgimg-1,
         .bgimg-2,
@@ -225,14 +253,25 @@
             min-height: 100%;
             width: 100%
         }
+
         /* title */
         .title {
             white-space: nowrap;
+        }
+
+        /* navbar */
+        .navbar-nav {
+            padding: 5%;
+        }
+
+        .nav-item{
+            margin: 0.7rem 0;
         }
     }
 
     /* desktop */
     @media only screen and (min-width: 900px) {
+
         /* bg images */
         .bgimg-1,
         .bgimg-2,
@@ -241,13 +280,17 @@
             min-height: 100%;
         }
 
-        /* navbar */
-        #navbarNav{
-            padding:1% 0;
+         /* navbar */
+         .navbar-nav {
+            padding: 2%;
+        }
+
+        .nav-item{
+            margin: 0;
         }
 
         /* increase font a bit */
-        .nav-item{
+        .nav-item {
             font-size: 1.5rem;
         }
 
