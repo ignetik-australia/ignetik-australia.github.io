@@ -1,12 +1,13 @@
 $(document).ready(function () {
-    // listen for load of window
-    setTimeout(function () {
-        $(".loader-wrapper").addClass('zero-opacity')
-    }, 1500);
-    setTimeout(function () {
-        $(".loader-wrapper").addClass('hidden');
-    }, 2500);
-
+    $(window).on("load", () => {
+        // listen for load of window
+        setTimeout(function () {
+            $(".loader-wrapper").addClass('zero-opacity')
+        }, 1500);
+        setTimeout(function () {
+            $(".loader-wrapper").addClass('hidden');
+        }, 2500);
+    })
 
     let clicks = 0;
 
