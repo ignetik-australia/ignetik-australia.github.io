@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    // listen for load of window
+    $(window).on("load", () => {
+        setTimeout(function () {
+            $(".loader-wrapper").addClass('zero-opacity')
+        }, 1000);
+        setTimeout(function () {
+            $(".loader-wrapper").addClass('hidden');
+        }, 2000);
+    })
+
     let clicks = 0;
 
     // Navbar fading
@@ -47,8 +57,3 @@ $(document).ready(function () {
     let year = new Date().getFullYear();
     $("#copyright span").text(String(year));
 });
-
-// listen for load of window
-$(window).on("load",()=>{
-    setTimeout(function(){$(".loader-wrapper").css({display:"none"})},2000);
-})
