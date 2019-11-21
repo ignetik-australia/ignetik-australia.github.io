@@ -47,3 +47,8 @@ $(document).ready(function () {
     let year = new Date().getFullYear();
     $("#copyright span").text(String(year));
 });
+
+// listen for load of window
+$(window).on("load",()=>{
+    setTimeout(function(){$(".loader-wrapper").css({display:"none"})},2000);
+})
