@@ -8,7 +8,8 @@
   justify-content: center;
   position: fixed;
   opacity: 1; 
-  transition: 1s opacity ease-in; 
+  -webkit-transition: 1s opacity ease-in; 
+  transition: 1s opacity ease-in;
 }
 
 .hidden {
@@ -26,14 +27,17 @@ svg {
 }
 
 svg g {
+  -webkit-animation: slide 2s linear infinite;
   animation: slide 2s linear infinite;
 }
 
 svg g:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
 svg g:nth-child(2) path {
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
   stroke-dasharray: 0px 158px;
   stroke-dashoffset: 1px;
@@ -46,15 +50,18 @@ svg path {
   fill: none;
   stroke-dasharray: 0 157px;
   stroke-dashoffset: 0;
+  -webkit-animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
   animation: escalade 2s cubic-bezier(0.8, 0, 0.2, 1) infinite;
 }
 
 @keyframes slide {
   0% {
+    -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
   }
 
   100% {
+    -webkit-transform: translateY(50px);
     transform: translateY(50px);
   }
 }
