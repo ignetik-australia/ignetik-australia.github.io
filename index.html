@@ -1,281 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- w3 css -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- Boostrap css-->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/8b430d3d5a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8b430d3d5a.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:200,300,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- animated menu -->
-    <link href="public/css/hamburgers.css" rel="stylesheet">
+    <link href="public/css/hamburgers.css" rel="stylesheet" />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="public/css/loader.css">
+    <link rel="stylesheet" href="public/css/loader.css" />
     <link rel="stylesheet" href="public/css/style.css" />
     <!-- animations and fadeins-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="public/images/favicon.ico"
+      type="image/x-icon"
+    />
 
     <title>Ignetik Australia</title>
-</head>
-<!-- internal styling -->
-<style>
+  </head>
+  <!-- internal styling -->
+  <style></style>
+  <!-- internal styling -->
 
-</style>
-<!-- internal styling -->
-
-<body>
-    <div class='loader-wrapper'>
-        <svg>
-            <g>
-                <path d="M 50,100 A 1,1 0 0 1 50,0" />
-            </g>
-            <g>
-                <path d="M 50,75 A 1,1 0 0 0 50,-25" />
-            </g>
-            <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color:white;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:white;stop-opacity:1" />
-                </linearGradient>
-            </defs>
-        </svg>
+  <body>
+    <div class="loader-wrapper">
+      <svg>
+        <g>
+          <path d="M 50,100 A 1,1 0 0 1 50,0" />
+        </g>
+        <g>
+          <path d="M 50,75 A 1,1 0 0 0 50,-25" />
+        </g>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:white;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
     <!-- bootstrap navbar -->
-    <div id='navbar-container'>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id='Navbar'>
-            <button class="hamburger hamburger--elastic navbar-toggler ml-3" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
+    <div id="navbar-container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="Navbar">
+        <button
+          class="hamburger hamburger--elastic navbar-toggler ml-3"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item ml-4">
-                        <a href="#">HOME</a>
-                    </li>
-                    <li class="nav-item ml-4" id="about-link">
-                        <a href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a href="#services">SERVICES</a>
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ml-4">
+              <a href="#">HOME</a>
+            </li>
+            <li class="nav-item ml-4" id="about-link">
+              <a href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <!-- hero image -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="title w3-display-middle w3-teal w3-center">
-            <span class="w3-xlarge w3-wide w3-animate-opacity w3-opacity-med">
-                IGNETIK AUSTRALIA</span>
-        </div>
+      <div class="title w3-display-middle w3-teal w3-center">
+        <span class="w3-xlarge w3-wide w3-animate-opacity w3-opacity-med">
+          IGNETIK AUSTRALIA</span
+        >
+      </div>
     </div>
     <!-- hero image -->
     <!-- Container (About Section) -->
 
     <div class="w3-content w3-container" id="about">
-        <h2 class="w3-center">About</h2>
-        <hr class='title-hr'>
-        <p class="about-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem deleniti assumenda. Nostrum aut, dolorum
-            expedita incidunt ad autem. Rerum modi consequuntur aperiam incidunt, iure ratione? Sint laudantium
-            accusantium saepe?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ab temporibus. Assumenda deleniti natus a
-            rerum delectus consequuntur eos voluptatum odio obcaecati voluptate, ullam suscipit asperiores praesentium,
-            ad similique id!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ab temporibus. Assumenda deleniti natus a
-            rerum delectus consequuntur eos voluptatum odio obcaecati voluptate, ullam suscipit asperiores praesentium,
-            ad similique id!
-        </p>
+      <h2 class="w3-center">About</h2>
+      <hr class="title-hr" />
+      <p class="about-text">
+        The Company has nine Consultants working on various ICT contracts direct
+        to various Government Departments or via Agents: Department of Health;
+        Department of Defence; Department of Human Services; Attorney General’s
+        Department; and Australian Institute of Health and Welfare. Since
+        2015-05-13, the company has been headquartered in ACT, Post Code 2609.
+        The previous headquarters were located in ACT 2600 (from 2014-09-16 to
+        2015-05-13), ACT 2600 (from 2008-06-01 to 2014-09-16). Ignetik Australia
+        Pty Ltd was registered for the GST on 2008-06-01. Ignetik Australia Pty
+        Ltd has been using the Ignetik Australia trading name since 2008-06- In
+        total the company used one trading name.
+      </p>
     </div>
     <!-- about section -->
 
     <!-- testimonials -->
     <section id="testimonials">
-        <!-- carousel -->
+      <!-- carousel -->
 
-        <div id="carousel-testimonial" class="carousel slide container-fluid" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="testimonial-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolores provident, quos
-                        sapiente praesentium voluptates id explicabo? Accusamus quae unde assumenda, exercitationem
-                        nihil iure quod asperiores, non optio similique ex.
-                    </div>
-                    <h3 class='mt-4'>SESA</h3>
-                </div>
-                <div class="carousel-item">
-                    <div class="testimonial-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatum voluptatem
-                        dolorum earum, voluptate laborum, pariatur cumque nostrum ratione ipsum nobis officiis,
-                        ducimus quos rem dicta unde ullam recusandae ex.
-                    </div>
-                    <h3 class='mt-4'>IEEE</h3>
-                </div>
+      <div
+        id="carousel-testimonial"
+        class="carousel slide container-fluid"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-text">
+              Also IA is also a strong supporter of System Engineering Society
+              of Australia. The Systems Engineering Society of Australia (SESA)
+              is a Technical Society of Engineers Australia and the Australian
+              affiliated chapter of the International Council on Systems
+              Engineering (INCOSE). Technical Societies provides a forum for
+              mutual technical development, networking, expanding and sharing
+              knowledge with like-minded professionals. Members of Technical
+              Societies provide expert opinion on a broad range of issues and
+              have a capacity to exert considerable influence about professional
+              practice in a changing world market.
             </div>
-            <a class="carousel-control-prev" href="#carousel-testimonial" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style='color: #777'></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-testimonial" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true" style='color: #777'></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <h3 class="mt-4">SESA</h3>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-text">
+              Ignetik Australia is a strong supporter of the following IEEE
+              Societies: IEEE Antenna and Propagation Society IEEE Geoscience
+              and Remote Sensing IEEE Computer Society
+            </div>
+            <h3 class="mt-4">IEEE</h3>
+          </div>
         </div>
+        <a
+          class="carousel-control-prev"
+          href="#carousel-testimonial"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+            style="color: #777"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel-testimonial"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+            style="color: #777"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </section>
-
 
     <!-- testimonials -->
 
     <!-- partners section -->
-    <div id='partners'>
-        <img src="public/images/SESA_logo.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
-        <img src="public/images/IEEE_Logo.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
-        <img src="public/images/DOD_logo.png" alt="" data-aos="fade-up" data-aos-duration="1500">
-        <img src="public/images/APESMA.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+    <div id="partners">
+      <img
+        src="public/images/SESA_logo.jpg"
+        alt=""
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
+      <img
+        src="public/images/IEEE_Logo.jpg"
+        alt=""
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
+      <img
+        src="public/images/DOD_logo.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
+      <img
+        src="public/images/APESMA.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
     </div>
     <!-- partners section -->
-
 
     <!-- Services image -->
 
     <div class="bgimg-2 w3-display-container w3-opacity-min" id="services">
-        <div class="w3-display-middle">
-            <span class="w3-center w3-padding-large w3-teal w3-xlarge w3-wide w3-animate-opacity w3-opacity-med">
-                SERVICES</span>
-        </div>
+      <div class="w3-display-middle">
+        <span
+          class="w3-center w3-padding-large w3-teal w3-xlarge w3-wide w3-animate-opacity w3-opacity-med"
+        >
+          SERVICES</span
+        >
+      </div>
     </div>
     <!-- Services image -->
 
     <!-- services container -->
     <div class="container" id="services-container">
-        <div class="card mb-3 p-4">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6">
-                    <img src="public/images/presentation.svg" class="card-img" data-aos="fade-up"
-                        data-aos-duration="1500">
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card-body">
-                        <h4 class="card-title" data-aos="fade-up" data-aos-duration="1500">Financial Services</h4>
-                        <p class="card-text" data-aos="fade-up" data-aos-duration="1500"> Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Soluta non amet
-                            autem iure porro corrupti
-                            provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia
-                            blanditiis eius saepe
-                            optio perferendis.</p>
-                    </div>
-                </div>
+      <div class="card mb-3 p-4">
+        <div class="row no-gutters">
+          <div class="col-12 col-md-6">
+            <img
+              src="public/images/presentation.svg"
+              class="card-img"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card-body" data-aos="fade-up" data-aos-duration="1500">
+              <h4 class="card-title">
+                Financial Services
+              </h4>
+              <p class="card-text">
+                Complete payroll management from simple Contracting Solutions to
+                Custom Payroll & Salary Packaging Services, Custom salary
+                packaging, Professional taxation advice, Registered Tax Agents
+                and Certified Practising Accountants.
+              </p>
             </div>
+          </div>
         </div>
-        <div class="card mb-3 p-4">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6">
-                    <img src="public/images/consultation.svg" class="card-img" data-aos="fade-up"
-                        data-aos-duration="1500">
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card-body">
-                        <h4 class="card-title" data-aos="fade-up" data-aos-duration="1500">Engineering Consulting</h4>
-                        <p class="card-text" data-aos="fade-up" data-aos-duration="1500"> Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Soluta non amet
-                            autem iure porro corrupti
-                            provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia
-                            blanditiis eius saepe
-                            optio perferendis.</p>
-                    </div>
-                </div>
+      </div>
+      <div class="card mb-3 p-4">
+        <div class="row no-gutters">
+          <div class="col-12 col-md-6">
+            <img
+              src="public/images/consultation.svg"
+              class="card-img"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card-body" data-aos="fade-up" data-aos-duration="1500">
+              <h4 class="card-title">
+                Engineering Consulting
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                non amet autem iure porro corrupti provident quisquam ullam
+                recusandae cumque dolorum architecto velit quas, mollitia
+                blanditiis eius saepe optio perferendis.
+              </p>
             </div>
+          </div>
         </div>
-        <div class="card mb-3 p-4">
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6">
-                    <img src="public/images/report.svg" class="card-img" data-aos="fade-up" data-aos-duration="1500">
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card-body">
-                        <h4 class="card-title" data-aos="fade-up" data-aos-duration="1500">Analysis</h4>
-                        <p class="card-text" data-aos="fade-up" data-aos-duration="1500"> Lorem ipsum dolor sit amet
-                            consectetur, adipisicing elit. Soluta non amet
-                            autem iure porro corrupti
-                            provident quisquam ullam recusandae cumque dolorum architecto velit quas, mollitia
-                            blanditiis eius saepe
-                            optio perferendis.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- services container-->
 
     <!-- Contact header -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-center w3-padding-large w3-teal w3-xlarge w3-wide w3-animate-opacity w3-opacity-med">
-                CONTACT</span>
-        </div>
+      <div class="w3-display-middle">
+        <span
+          class="w3-center w3-padding-large w3-teal w3-xlarge w3-wide w3-animate-opacity w3-opacity-med"
+        >
+          CONTACT</span
+        >
+      </div>
     </div>
     <!-- Contact header -->
 
     <!-- Contact container -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
-
-        <div class="w3-row w3-section">
-            <div class="w3-col m6 w3-container">
-                <img src="public/images/canberra_img.jpg" class="w3-image w3-round" style="width:100%"
-                    data-aos="fade-up" data-aos-duration="1500">
-            </div>
-            <div class="w3-col m6 w3-panel" data-aos="fade-up" data-aos-duration="1500">
-                <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Canberra,
-                    Australia<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +61
-                    479132542<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                    rainer.ignetik@ozemail.com.au<br>
-                </div>
-            </div>
+      <div class="w3-row w3-section">
+        <div class="w3-col m6 w3-container">
+          <img
+            src="public/images/canberra_img.jpg"
+            class="w3-image w3-round"
+            style="width:100%"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          />
         </div>
+        <div
+          class="w3-col m6 w3-panel"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="w3-large w3-margin-bottom">
+            <i
+              class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Level 1, 29 Jardine Street Kingston
+            <br />
+            ACT 2604
+            <br />
+            <i
+              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Phone: 1800 882 059<br />
+            Fax: 1800 988 000<br />
+            <i
+              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Email: rainer.ignetik@ozemail.com.au<br />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Contact container -->
 
     <!-- Footer -->
     <footer class="w3-center w3-teal w3-padding-64 w3-opacity-min">
-        <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xxxlarge w3-section">
-            <a href="https://www.facebook.com/rainer.ignetik"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-            <a href="https://twitter.com/ignetik?lang=en"><i class="fab fa-twitter w3-hover-opacity"></i></a>
-            <a href="https://au.linkedin.com/in/rainer-ignetik-7888064"><i
-                    class="fab fa-linkedin w3-hover-opacity"></i></a>
-        </div>
-        <p id='copyright'>&copy; <span></span> ALL RIGHTS RESERVED</p>
+      <a href="#home" class="w3-button"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xxxlarge w3-section">
+        <a href="https://www.facebook.com/rainer.ignetik"
+          ><i class="fab fa-facebook w3-hover-opacity"></i
+        ></a>
+        <a href="https://twitter.com/ignetik?lang=en"
+          ><i class="fab fa-twitter w3-hover-opacity"></i
+        ></a>
+        <a href="https://au.linkedin.com/in/rainer-ignetik-7888064"
+          ><i class="fab fa-linkedin w3-hover-opacity"></i
+        ></a>
+      </div>
+      <p id="copyright">&copy; <span></span> ALL RIGHTS RESERVED</p>
     </footer>
     <!-- Footer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src='public/js/index.js'></script>
+    <script src="public/js/index.js"></script>
     <!-- aos animations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
